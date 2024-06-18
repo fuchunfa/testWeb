@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <script>
-      var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
-        CSS.supports('top: constant(a)'))
-      document.write(
-        '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
-        (coverSupport ? ', viewport-fit=cover' : '') + '" />')
-    </script>
-    <title></title>
-    <!--preload-links-->
-    <!--app-context-->
-  </head>
-  <body>
-	  <div>
-		  <h1 style="text-align: center; color: red;" >欢迎来到我的网页</h1>
-		  <h1 style="text-align: center; color: red;" >欢迎来到我的网页</h1>
-		  <h1 style="text-align: center; color: red;" >欢迎来到我的网页</h1>
-	  </div>
-  </body>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>图片库</title>
+  <style>
+    #imageGallery {
+      display: flex;
+      justify-content: center;
+    }
+
+    #imageGallery img {
+      width: 200px;
+      height: 150px;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>图片库</h2>
+  <div id="imageGallery">
+    <img src="Tup/meidusa.jpg" alt="图片 1">
+    <img src="Tup/meidusa.jpg" alt="图片 2">
+    <img src="Tup/meidusa.jpg" alt="图片 3">
+    <img src="Tup/meidusa.jpg" alt="图片 4">
+    <img src="Tup/meidusa.jpg" alt="图片 5">
+    <img src="Tup/meidusa.jpg" alt="图片 6">
+  </div>
+</body>
+
 </html>
